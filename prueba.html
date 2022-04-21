@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,56 +24,44 @@
 
 
     <menu>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light container-xl">
+        <div>
           <a class="navbar-brand" href="./index.html"><img src="/logo.png" alt="Rodriguez & Asociados" title="Rodriguez & Asociados"></a> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-              <li class="nav-item">
-                <a class="nav-link btn-outline-secondary" href="./index.html" role="button">Inicio</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link btn-outline-secondary active" href="./servicios.html" role="button">Servicios</a>
-              </li>
-
-              <div class="dropdown">
-                <a class="nav-link btn btn-outline-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                  Plantas Verificadoras
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Buenos Aires</a>
-                  <a class="dropdown-item" href="#">Ciudad de Buenos Aires</a>
-                  <a class="dropdown-item" href="#">Catamarca</a>
-                  <a class="dropdown-item" href="#">Jujuy</a>
-                </div>
+ 
+            <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plantas Verificadoras</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Buenos Aires</a>
+                <a class="dropdown-item" href="#">Ciudad de Buenos Aires</a>
+                <a class="dropdown-item" href="#">Catamarca</a>
+                <a class="dropdown-item" href="#">Jujuy</a>
               </div>
-
-         
-             <li class="nav-item">
-              <a class="nav-link btn-outline-secondary" href="./clientes.html" role="button">Nuestros Clientes</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link btn-outline-secondary" href="./certifica.html" role="button">Declaraciones y DDJJ</a>
+              <a class="nav-link" href="./clientes.html">Nuestros Clientes</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link btn-outline-secondary" href="./contacto.html" role="button">Contactenos</a>
+              <a class="nav-link" href="./certifica.html">Declaraciones y DDJJ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contactenos</a>
             </li>
           </ul>
 
-            <form class="d-flex">
-              <input class="form-control me-1" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
           </div>
-        </div>
+        
       </nav>
 
       </menu>
@@ -147,41 +136,6 @@
 
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-lg-4">
-              <!-- Card Flip -->
-          <div class="card-flip">
-            <div class="flip">
-              <div class="front">
-                <!-- front content -->
-                <div class="card">
-                  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
-                  <div class="card-block">
-                    <h4 class="card-title">Card Flip</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <div class="card">
-                  <div class="card-block">
-                    <h4 class="card-title">Card Flip</h4>
-                    <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                  </div>
-                  <img data-src="holder.js/100px180/?text=Image" alt="Image [100%x180]" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
-                  <div class="card-block">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-              <!-- End Card Flip -->
         </div>
       </div>
     </div>
@@ -196,10 +150,56 @@
 </div>
 
     
+<!-- Footer -->
+<footer class="page-footer font-small darken-3">
 
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="bi bi-facebook">Facebook</i>
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">Facebook</i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x">LinkedIn</i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">Instagram</i>
+          </a>
+
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="/"> rodriguezasociados.com.ar</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 
 
 </body>
 </html>
+
+
