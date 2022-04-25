@@ -8,3 +8,16 @@
     font-size: 35px;
     color: #36A0FF;
 }
+
+.caja{
+    position: relative;
+    display: inline-block;
+}
+.texto3{
+    position: absolute;
+    top: 450px;
+    right: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+}
