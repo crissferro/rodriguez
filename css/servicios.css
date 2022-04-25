@@ -1,0 +1,45 @@
+/* html, body {
+    height: 100%;
+  }
+   */
+/*   .min-100 {
+      min-height: 100%;
+  } */
+
+/* .container {
+
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+} */
+/* .container > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+} */
+
+.caja{
+    position: relative;
+    display: inline-block;
+}
+.texto1{
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+}
+.texto2{
+    position: absolute;
+    top: 60px;
+    right: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+}
