@@ -1,182 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+
+  <!-- estilos -->
+  <link href="css/estilos.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-
-    <link href="css/servicios.css" rel="stylesheet" type="text/css">
-  
-    
-  </head>
-  
-  
+  <!-- iconos -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
+
   <script src="https://kit.fontawesome.com/e0f7a1940e.js" crossorigin="anonymous"></script>
-  
-  
-  <body>
-  
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-  
- 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div>
-              <a class="navbar-brand" href="./index.html"><img src="/logo.png" alt="Rodriguez & Asociados" title="Rodriguez & Asociados"></a> 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plantas Verificadoras</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Buenos Aires</a>
-                    <a class="dropdown-item" href="#">Ciudad de Buenos Aires</a>
-                    <a class="dropdown-item" href="#">Catamarca</a>
-                    <a class="dropdown-item" href="#">Jujuy</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./clientes.html">Nuestros Clientes</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Declaraciones y DDJJ</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./certificacion_escribano.html">Recaudo Certificacion Escribano</a>
-                    <a class="dropdown-item" href="./certificacion_contable.html">Certificacion Contable</a>
-                    <a class="dropdown-item" href="./transferencia_persona_fisica.html">Transferencias Personas Fisicas</a>
-                    <a class="dropdown-item" href="./transferencia_persona_juridica.html">Transferencias Personas Juridicas</a>
-                    <a class="dropdown-item" href="./modelos_ddjj.html">Decargue Modelos DDJJ</a>
-                    <a class="dropdown-item" href="./instructivo_gestionar_transferencia.html">Instructivo para Gestionar Transferencias</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contactenos</a>
-                </li>
-              </ul>
-  
-            </div>
-          
-        </nav>
-  
 
 
-    <!-- imagen y titulo   -->
+</head>
 
-    <div class="caja">
-        <img   style="width: 1355px; height: 550px; object-fit: cover; object-position: 100% 0;" src="./img/servicios.jpg"  alt="servicios">
-        <div class="texto2"><h1>NUESTROS SERVICIOS</h1></div>
+
+<body>
+
+  <!-- boton arriba -->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- fin boton arriba -->
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+  </script>
+
+
+  <!-- menu -->
+  <iframe src="menu.html" width=90% height=100% align="center" scrolling="no" frameborder="no"></iframe>
+
+
+
+  <!-- imagen y titulo   -->
+
+  <div class="caja">
+    <img style="width: 1355px; height: 550px; object-fit: cover; object-position: 100% 0;" src="./img/servicios.jpg"
+      alt="servicios">
+    <div class="texto2">
+      <h1>NUESTROS SERVICIOS</h1>
+    </div>
   </div>
-  
+
   <div>
-  
+
     <!-- card de boostrap para los servicios   -->
-  
-      
-  
+
+
+
     <div class="container">
-        <div class="card-group mt-3">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <i class="fa-solid fa-calculator fa-2xl"></i>
-                <br> <br>
-                <h5 class="card-title">Contables</h5>
-                <p class="card-text">Rodríguez & Asociados Consultores SRL expande sus servicios, desarrollando un asesoramiento integral en todos los aspectos contables, impositivos, financieros y previsionales.</p>
-              </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <i class="fa-solid fa-pencil fa-2xl"></i>
-                <br> <br>
-                <h5 class="card-title">Gestoria Profesional</h5>
-                <p class="card-text">Trabajando en equipo y contando con los últimos avances tecnológicos implementados exclusivamente para Rodríguez & Asociados Consultores SRL, podemos brindarles profesionalidad a nuestros clientes en el llenado de las solicitudes tipos, seguimientos de los trámites, base de datos de todos los clientes y unidades, Vencimiento de Cedulas Verde y RUTA.</p>
-              </div>
-            </div>
-    
-    
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <i class="fa-solid fa-bell fa-2xl"></i>
-                  <br> <br>
-                  <h5 class="card-title">Juridicos</h5>
-                  <p class="card-text">Rodríguez & Asociados Consultores SRL cuenta con un importante Staff en esta área, lo que nos permite brindarle un asesoramiento adecuado en los diversos temas planteados por nuestros clientes, recibiendo un servicio eficiente, atención personalizada por profesionales que se encuentran actualizados con las últimas leyes, disposiciones, resoluciones, para alcanzar los objetivos deseados.</p>
-                </div>
-              </div>
-    
-    
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <i class="fa-solid fa-house-chimney fa-2xl"></i>
-                  <br> <br>
-                  <h5 class="card-title">Seguros</h5>
-                  <p class="card-text">El constante crecimiento de Rodríguez & Asociados Consultores SRL nos lleva a que trabajemos en el área de seguros en busca de mejores costos, dejando de lado ciertas comisiones que provocan distorsión en el precio de las pólizas. Les brindamos a nuestros clientes, un servicio eficiente, asegurando sus Capitales a costos menores y en las Compañías de mayor Solvencia Patrimonial del Mercado.</p>
-                </div>
-              </div>
-    
-    
-    
+      <div class="card-group mt-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <i class="fa-solid fa-calculator fa-2xl"></i>
+            <br> <br>
+            <h5 class="card-title">Contables</h5>
+            <p class="card-text">Rodríguez & Asociados Consultores SRL expande sus servicios, desarrollando un
+              asesoramiento integral en todos los aspectos contables, impositivos, financieros y previsionales.</p>
+          </div>
         </div>
-    
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <i class="fa-solid fa-pencil fa-2xl"></i>
+            <br> <br>
+            <h5 class="card-title">Gestoria Profesional</h5>
+            <p class="card-text">Trabajando en equipo y contando con los últimos avances tecnológicos implementados
+              exclusivamente para Rodríguez & Asociados Consultores SRL, podemos brindarles profesionalidad a nuestros
+              clientes en el llenado de las solicitudes tipos, seguimientos de los trámites, base de datos de todos los
+              clientes y unidades, Vencimiento de Cedulas Verde y RUTA.</p>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <i class="fa-solid fa-bell fa-2xl"></i>
+            <br> <br>
+            <h5 class="card-title">Juridicos</h5>
+            <p class="card-text">Rodríguez & Asociados Consultores SRL cuenta con un importante Staff en esta área, lo
+              que nos permite brindarle un asesoramiento adecuado en los diversos temas planteados por nuestros
+              clientes, recibiendo un servicio eficiente, atención personalizada por profesionales que se encuentran
+              actualizados con las últimas leyes, disposiciones, resoluciones, para alcanzar los objetivos deseados.</p>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <i class="fa-solid fa-house-chimney fa-2xl"></i>
+            <br> <br>
+            <h5 class="card-title">Seguros</h5>
+            <p class="card-text">El constante crecimiento de Rodríguez & Asociados Consultores SRL nos lleva a que
+              trabajemos en el área de seguros en busca de mejores costos, dejando de lado ciertas comisiones que
+              provocan distorsión en el precio de las pólizas. Les brindamos a nuestros clientes, un servicio eficiente,
+              asegurando sus Capitales a costos menores y en las Compañías de mayor Solvencia Patrimonial del Mercado.
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+
     </div>
 
-</div>
+  </div>
 
-<br><br>
-<footer class="bg-light">
-  <!-- Footer Elements -->
-  <div>
-    <div class="row">
-      <div class="col-sm text-center">
-<br>
+  <br><br>
+  <footer class="bg-light">
+    <!-- Footer Elements -->
+    <div>
+      <div class="row">
+        <div class="col-sm text-center">
+          <br>
           <!-- Facebook -->
           <a href="https://www.facebook.com/rodriguezasociadosasesores" target=”_blank”>
             <ion-icon name="logo-facebook"></ion-icon>
           </a>
           <!--Linkedin -->
           <a href="">
-          <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
           </a>
           <!--Instagram-->
           <a href="">
-          <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
           </a>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Footer Elements -->
+    <!-- Footer Elements -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 container-xl">© 2022 Copyright Rodriguez & Asociados - Asesores
-    <a href="/"> rodriguezasociados.com.ar</a>
-    <p>Designed by Rodriguez & Asociados - Asesores</p>
-  </div>
-  <!-- Copyright -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 container-xl">© 2022 Copyright Rodriguez & Asociados - Asesores
+      <a href="/"> rodriguezasociados.com.ar</a>
+      <p>Designed by Rodriguez & Asociados - Asesores</p>
+    </div>
+    <!-- Copyright -->
 
-  
 
-</footer>
-<!-- Footer -->
+
+  </footer>
+  <!-- Footer -->
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
 
 </body>
+
 </html>
