@@ -19,16 +19,132 @@
     color: white;
 }
 
-.footer{
-    background: rgb(153, 153, 153);
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin: 2rem 0 0 0;
-    line-height: 1em;
-
+body{
+    color: black;
+    margin: 0;
 }
 
-ion-icon {
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+.texto{
+    margin-bottom: 1.6em;
+}
+.contenedor{
+    width: 85%;
+    max-width: 1266px;
+    margin: 0 auto;
+}
+
+
+.header{
+    background: rgb(153, 153, 153);
+    color: white;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.3em;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: rgb(31, 31, 31);
+}
+
+.main{
+    padding-top: 10rem;
+}
+
+
+.footer{
+    background: rgb(153, 153, 153);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1em;
+}
+
+.redes{
     font-size: 30px;
-  }
+    line-height: 2em;
+}
+
+
+
+
+@media only screen and (max-width:1044px){
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul{
+        display: none;
+    }
+
+    .navigation ul.show{
+        display: block;
+    }
+
+    .navigation ul li{
+        display: block;
+    }
+    
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    
+    .navigation ul li a:hover{
+        background: rgb(31, 31, 31);
+    }
+}
